@@ -2,7 +2,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_signin_button/button_view.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
-import 'package:food_app/auth/Login.dart';
 import 'package:food_app/providers/user_provider.dart';
 import 'package:food_app/screens/Admin/Admin.dart';
 import 'package:food_app/screens/home/home_screen.dart';
@@ -84,13 +83,6 @@ class _SignInState extends State<SignIn> {
                   ),
                   Column(
                     children: [
-                      SignInButton(
-                        Buttons.Email,
-                        text: "Sign in with Email",
-                        onPressed: () {
-                          Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>Login()));
-                        },
-                      ),
                       SignInButton(
                         Buttons.Google,
                         text: "Sign in with Google",
